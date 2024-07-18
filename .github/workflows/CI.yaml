@@ -43,7 +43,7 @@ jobs:
        tflint_version: latest
     
     - name: Show version
-      run: tflint_version
+      run: tflint --version
 
     - name: Run TFlint
       run: tflint -f compact
