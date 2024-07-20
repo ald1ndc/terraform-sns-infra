@@ -52,5 +52,6 @@ jobs:
 
       #terraform Plan
       - name: Terraform Plan
-        run: terraform plan -var-file="environments/prod.tfvars"
+        run: terraform plan
+      #  run: terraform plan -var-file="environments/prod.tfvars"
 
