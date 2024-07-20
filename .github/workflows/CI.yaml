@@ -45,8 +45,12 @@ jobs:
         run: tflint --version
 
       - name: Run TFlint
+        run: tflint --init
+
+      - name: Run TFlint
         run: tflint -f compact
 
       #terraform Plan
       - name: Terraform Plan
-        run: terraform plan
+        run: terraform plan -var-file=environments/prod.tfvars
+

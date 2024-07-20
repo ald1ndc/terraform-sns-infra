@@ -1,5 +1,6 @@
+# add this, then move it to variables.tf file
 variable "abc" {
   type        = string
   default     = "aldin-ce6-updates-topic"
-  description = "Topic is it?"
+  description = "This is a type os sns topic"
 }
